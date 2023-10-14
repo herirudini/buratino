@@ -7,40 +7,55 @@
     <title>Buratino</title>
     <style>
         body {
-            text-align: left;
-            margin: 0 20%;
-            font-family: cursive;
-            font-family: system-ui;
-            word-spacing: 1.5px;
-            line-height: 1.5;
+            margin: auto;
             background-color: dimgrey;
+            display: flex;
+            justify-content: center;
         }
 
         #content {
             background-color: linen;
             padding: 30px;
+            width: 700px;
+            text-align: left;
+            font-family: cursive;
+            font-family: system-ui;
+            word-spacing: 1.5px;
+            line-height: 1.5;
+            font-size: 16px;
+        }
+
+        p {
+            text-align: justify;
         }
 
         img {
-            width: auto;
+            width: 400px;
             margin: 20px 0;
             box-shadow: 1px 1px 10px 1px #888888;
             border-radius: 20px;
         }
 
         @media screen and (max-width: 700px) {
-            img {
+            #content {
                 width: 100%;
             }
 
-            body {
-                margin: 0;
+        }
+
+        @media screen and (max-width: 440px) {
+            img {
+                width: 100%;
             }
 
         }
 
         td {
             padding-left: 20px;
+        }
+
+        th,td {
+            font-size: 12px;
         }
 
         h2 {
@@ -55,13 +70,14 @@
 <body>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <div id="content"></div>
+    <div>-BERSAMBUNG-</div>
     <script>
         $(function () {
             for (let i = 0; i < 18; i += 1) {
                 jQuery('<div>', {
                     id: `Chap${i}`,
-                    // class: 'some-class some-other-class',
-                    // title: 'now this div has a title!'
+                    class: 'chapter',
+                    title: `Chapter ${i}`
                 }).appendTo('#content');
             }
         });
@@ -83,8 +99,7 @@
             $("#Chap14").load("./chapters/14-Pendidikan.html");
             $("#Chap15").load("./chapters/15-Negeri Idiot.html");
             $("#Chap16").load("./chapters/16-Ditangkap Polisi.html");
-            $("#Chap17").load("./chapters/16-Ditangkap Polisi.html");
-            $("#Chap18").load("./inde.html");
+            $("#Chap17").load("./chapters/17-Kunci Emas.html");
         });
     </script>
 </body>
