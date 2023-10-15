@@ -10,7 +10,8 @@
             margin: auto;
             background-color: dimgrey;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
         }
 
         #content {
@@ -69,11 +70,12 @@
 
 <body>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <div id="content"></div>
+    <div id="content">
+    </div>
     <div>-BERSAMBUNG-</div>
     <script>
         $(function () {
-            for (let i = 0; i < 18; i += 1) {
+            for (let i = 0; i < 60; i += 1) {
                 jQuery('<div>', {
                     id: `Chap${i}`,
                     class: 'chapter',
@@ -89,17 +91,17 @@
             $("#Chap4").load("./chapters/4-Jangkrik-Berbicara.html");
             $("#Chap5").load("./chapters/5-Susyara.html");
             $("#Chap6").load("./chapters/6-Teater-Boneka.html");
-            $("#Chap7").load("./chapters/7-Para boneka.html");
-            $("#Chap8").load("./chapters/8-Karabas Barabas.html");
-            $("#Chap9").load("./chapters/9-Basilio&Alisa.html");
-            $("#Chap10").load("./chapters/10-Kedai Tiga Impun.html");
-            $("#Chap11").load("./chapters/11-Dikejar Perampok.html");
-            $("#Chap12").load("./chapters/12-The Hanged Man.html");
-            $("#Chap13").load("./chapters/13-Gadis Berambut Biru.html");
+            $("#Chap7").load("./chapters/7-Para-Boneka.html");
+            $("#Chap8").load("./chapters/8-Karabas-Barabas.html");
+            $("#Chap9").load("./chapters/9-Basilio-Alisa.html");
+            $("#Chap10").load("./chapters/10-Kedai-Tiga-Impun.html");
+            $("#Chap11").load("./chapters/11-Dikejar-Perampok.html");
+            $("#Chap12").load("./chapters/12-The-Hanged-Man.html");
+            $("#Chap13").load("./chapters/13-Gadis-Berambut-Biru.html");
             $("#Chap14").load("./chapters/14-Pendidikan.html");
-            $("#Chap15").load("./chapters/15-Negeri Idiot.html");
-            $("#Chap16").load("./chapters/16-Ditangkap Polisi.html");
-            $("#Chap17").load("./chapters/17-Kunci Emas.html");
+            $("#Chap15").load("./chapters/15-Negeri-Idiot.html");
+            $("#Chap16").load("./chapters/16-Ditangkap-Polisi.html");
+            $("#Chap17").load("./chapters/17-Kunci-Emas.html");
         });
     </script>
 </body>
