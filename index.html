@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+    <!--
+    Copyright (c) 2023 Heri Rudini. All rights reserved.
+    For more information, see the license details in ./README.html
+    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buratino</title>
@@ -9,52 +13,162 @@
 </head>
 
 <body>
-    <script src="jquery-3.7.1.min.js"></script>
-    <div id="content"></div>
-    <script>
-        $(function () {
-            for (let i = 0; i < 31; i += 1) {
-                jQuery('<div>', {
-                    id: `Chap${i}`,
-                    class: 'chapter',
-                    title: `Chapter ${i}`
-                }).appendTo('#content');
-            }
-        });
-        $(function () {
-            $("#Chap0").load("./chapters/0-Cover.html");
-            $("#Chap1").load("./chapters/1-Josepi.html");
-            $("#Chap2").load("./chapters/2-Carlo.html");
-            $("#Chap3").load("./chapters/3-Buratino.html");
-            $("#Chap4").load("./chapters/4-Jangkrik-Berbicara.html");
-            $("#Chap5").load("./chapters/5-Susyara.html");
-            $("#Chap6").load("./chapters/6-Teater-Boneka.html");
-            $("#Chap7").load("./chapters/7-Para-Boneka.html");
-            $("#Chap8").load("./chapters/8-Karabas-Barabas.html");
-            $("#Chap9").load("./chapters/9-Basilio-Alisa.html");
-            $("#Chap10").load("./chapters/10-Kedai-Tiga-Impun.html");
-            $("#Chap11").load("./chapters/11-Dikejar-Perampok.html");
-            $("#Chap12").load("./chapters/12-The-Hanged-Man.html");
-            $("#Chap13").load("./chapters/13-Gadis-Berambut-Biru.html");
-            $("#Chap14").load("./chapters/14-Pendidikan.html");
-            $("#Chap15").load("./chapters/15-Negeri-Idiot.html");
-            $("#Chap16").load("./chapters/16-Ditangkap-Polisi.html");
-            $("#Chap17").load("./chapters/17-Kunci-Emas.html");
-            $("#Chap18").load("./chapters/18-Pierrot.html");
-            $("#Chap19").load("./chapters/19-Duremar.html");
-            $("#Chap20").load("./chapters/20-Malavina.html");
-            $("#Chap21").load("./chapters/21-Pertarungan.html");
-            $("#Chap22").load("./chapters/22-Goa.html");
-            $("#Chap23").load("./chapters/23-Membongkar-Rahasia.html");
-            $("#Chap24").load("./chapters/24-Rahasia-Kunci-Emas.html");
-            $("#Chap25").load("./chapters/25-Teman-Seperjuangan.html");
-            $("#Chap26").load("./chapters/26-Pulang.html");
-            $("#Chap27").load("./chapters/27-Atas-Nama-Raja.html");
-            $("#Chap28").load("./chapters/28-Jalan-Menuju-Kebahagiaan.html");
-            $("#Chap29").load("./chapters/29-Kemenangan.html");
-            $("#Chap30").load("README.html");
-        });
-    </script>
+    <div id="content">
+        <div id="Chap0" class="chapter">
+            <h1>Kunci Emas, Atau Petualangan Buratino</h1>
+            <br>
+            <br>
+            <table aria-describedby="Front Cover">
+                <tbody>
+                    <tr>
+                        <th>
+                            Judul asli
+                        </th>
+                        <td>
+                            : <em>Zolotoy Klyuchik, Ili Priklyucheniya Buratino</em>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Pengarang
+                        </th>
+                        <td>
+                            : Aleksey Nikolayevich Tolstoy
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Penerbit asli
+                        </th>
+                        <td>
+                            : <em>Tsentral'nyy komitet VLKSM Izdatel'stvo detskoy literatury;</em> <em>Leningradskoye
+                                Otdeleniye;</em> 1936
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Diterjemahkan oleh
+                        </th>
+                        <td>
+                            : Heri Rudini
+                        </td>
+                    </tr>
+                    <!-- <tr>
+            <th>
+                Dipublikasikan ulang oleh
+            </th>
+            <td>
+                : Yelkis
+            </td>
+        </tr> -->
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <h2>Kata Pengantar</h2>
+
+            <p>Ketika saya masih muda; dahulu sekali; saya pernah membaca sebuah buku: "Pinokio, atau
+                Petualangan Boneka Kayu" (Boneka Kayu di dalam bahasa Itali: Buratino).</p>
+
+            <p>Saya sering menceritakan kepada sobat-sobat saya, para pemuda dan pemudi, petualangan seru si
+                Buratino. Tapi semenjak buku itu hilang, sayapun menceritakannya seiring waktu semakin berbeda, dengan
+                memasukkan macam-macam kisah, yang di dalam buku itu sama sekali tidak ada.</p>
+
+            <p>Sekarang, setelah bertahun-tahun lamanya, saya kembali teringat sobat lama saya 'Buratino' dan terpikir
+                untuk
+                menceritakannya pada kalian, muda dan mudi sekalian, kisah luar biasa tentang si manusia kayu.</p>
+
+            <strong>-Aleksey Tolstoy-</strong>
+        </div>
+        <div id="Chap1" class="chapter">
+            <h2>Seniman kayu bernama Josepi mendapati di tangannya sebatang kayu, yang memekik layaknya suara manusia.
+            </h2>
+
+            <p>Dahulu kala, di sebuah kota di pesisir laut Mediterania hidup seorang seniman kayu tua bernama Josepi,
+                dia dijuluki si Hidung Merah.</p>
+
+            <p>Pada suatu hari dia mendapati di tangannya sebatang kayu, kayu gelondongan yang biasa dipakai untuk bahan
+                bakar perapian
+                di musim dingin.</p>
+
+            <p>- Lumayan nih, /Josepi berkata pada dirinya sendiri/ mending dibikinkan sesuatu saja, kaki-kaki meja
+                misalnya...</p>
+
+            <p>Josepipun mengenakan kacamatanya, yang dililit benang /sebagaimana kacamata itu sudah usang/, dia
+                pegangi kayu gelondongan itu
+                dan mulai mengupasnya dengan kampak.</p>
+
+            <img class="illustration" src="../illustration/image001.png" alt="Josepi memegang kayu yang bisa berbicara">
+
+            <p>Tapi ketika dia sedang mengupas, tiba-tiba terdengar suara yang memekik tipis:</p>
+
+            <p>- Oy oy, tolong pelan-pelan!</p>
+
+            <p>Josepi menurunkan kacamatanya ke ujung hidung dan kemudian memeriksa sekeliling bengkel-kayu itu. Tidak
+                ada
+                siapapun...</p>
+
+            <p>Dia membungkuk ke kolong meja. Tidak ada siapapun...</p>
+
+            <p>Dia melihat ke dalam keranjang serpihan kayu. Tidak ada siapapun...</p>
+
+            <p>Melongok ke ambang pintu. Tidak ada siapapun di luar...</p>
+
+            <p>- "Masa iya aku melamun?" /pikir Josepi/ "Siapa yang barusan memekik?"</p>
+
+            <p>Sekali lagi dia ambil kampaknya, dan sekali lagi, begitu menancap ke kayu itu...</p>
+
+            <p>- Aduh, linu, apa kubilang! /suara tipis itu merintih/</p>
+
+            <p>Kali ini Josepi kaget bukan main, kacamatanya sampai berkeringat... Dia memeriksa setiap sudut ruangan,
+                bahkan
+                dia merangkak masuk ke perapian, mendongakkan kepalanya, cukup lama mengamati ke dalam cerobong.</p>
+
+            <p>- Tidak, tidak ada siapapun.</p>
+
+            <p>- "Apa mungkin, aku meminum sesuatu yang tidak lazim sehingga telingaku berdering?" /Josepi
+                bertanya-tanya pada dirinya sendiri/</p>
+
+            <p>Tidak, hari ini dia tidak meminum apapun yang tidak lazim... Rileks sejenak, Josepi mengambil sugu, dia
+                ketok-ketok bagian belakang sugu itu dengan palu, untuk mengatur supaya tidak terlalu banyak dan tidak
+                terlalu sedikit
+                pisaunya mencuat, dia baringkan kayu itu di meja dan mulailah dia serut...</p>
+
+            <p>- Oy, oy, oy, hati-hati, apa yang kau serut? /suara tipis itu merintih kesal/</p>
+
+            <p>Josepi melepaskan sugunya, mundur, mundur dan seketika terjungkal ke lantai: Sekarang dia mengerti, suara
+                tipis
+                itu berasal dari kayu itu.</p>
+        </div>
+        <div id="Chap2" class="chapter"></div>
+        <div id="Chap3" class="chapter"></div>
+        <div id="Chap4" class="chapter"></div>
+        <div id="Chap5" class="chapter"></div>
+        <div id="Chap6" class="chapter"></div>
+        <div id="Chap7" class="chapter"></div>
+        <div id="Chap8" class="chapter"></div>
+        <div id="Chap9" class="chapter"></div>
+        <div id="Chap10" class="chapter"></div>
+        <div id="Chap11" class="chapter"></div>
+        <div id="Chap12" class="chapter"></div>
+        <div id="Chap13" class="chapter"></div>
+        <div id="Chap14" class="chapter"></div>
+        <div id="Chap15" class="chapter"></div>
+        <div id="Chap16" class="chapter"></div>
+        <div id="Chap17" class="chapter"></div>
+        <div id="Chap18" class="chapter"></div>
+        <div id="Chap19" class="chapter"></div>
+        <div id="Chap20" class="chapter"></div>
+        <div id="Chap21" class="chapter"></div>
+        <div id="Chap22" class="chapter"></div>
+        <div id="Chap23" class="chapter"></div>
+        <div id="Chap24" class="chapter"></div>
+        <div id="Chap25" class="chapter"></div>
+        <div id="Chap26" class="chapter"></div>
+        <div id="Chap27" class="chapter"></div>
+        <div id="Chap28" class="chapter"></div>
+        <div id="Chap29" class="chapter"></div>
+    </div>
 </body>
 
 </html>
